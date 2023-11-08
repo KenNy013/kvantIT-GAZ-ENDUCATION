@@ -1,0 +1,53 @@
+.section-enducation {
+	.section-enducation__wrapper-sections {
+		display: grid;
+		grid-auto-rows: 643px;
+		gap: 20px;
+	}
+}
+
+.accordion {
+	display: flex;
+	gap: 45px;
+	.accordion__btns {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		width: 316px;
+		.accordion__btn {
+			position: relative;
+			overflow: hidden;
+			height: 90px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			border-radius: 20px;
+
+			padding: 0px 30px;
+
+			transition: var(--effect-end);
+
+			&:hover {
+				& h2 {
+					color: var(--color-text);
+
+					transition: var(--effect-start);
+				}
+
+				& svg path {
+					fill: var(--color-text);
+					transition: var(--effect-start);
+				}
+			}
+		}
+	}
+
+	.accordion__body {
+		width: 567px;
+
+		& h2 {
+			margin-bottom: 10px;
+		}
+	}
+}

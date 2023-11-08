@@ -1,0 +1,65 @@
+.section-about {
+	.section-about__block-info {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		height: 390px;
+
+		gap: 20px;
+	}
+
+	.section-about__block-name {
+		overflow: hidden;
+		grid-column: span 4;
+
+		border-radius: 20px;
+
+		position: relative;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+
+		.section-about__img {
+			width: 200px;
+			height: 200px;
+			background-color: var(--color-text);
+			border-radius: 50%;
+		}
+
+		.section-about__name {
+			font-family: 'Montserrat';
+			font-size: 25px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+		}
+
+		.ellipse {
+			left: -215px;
+			bottom: -246px;
+		}
+	}
+
+	.section-about__block-biog {
+		overflow: hidden;
+		grid-column: span 8;
+
+		border-radius: 20px;
+
+		position: relative;
+
+		padding: 30px;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+
+		.section-about__block-biog-title {
+			align-self: flex-start;
+		}
+	}
+}

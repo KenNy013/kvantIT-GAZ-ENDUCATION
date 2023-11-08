@@ -1,0 +1,179 @@
+:root {
+	--bg-color: #211f1f;
+	--color-text: #fbf7f7;
+	--color-effect: #00a233;
+	--color-active: #00a233;
+
+	--border: 5px solid var(--color-active);
+	--effect-start: all 0.9s ease;
+	--effect-end: all 0.4s ease;
+}
+
+h1 span {
+	color: var(--color-effect);
+}
+
+h2 span {
+	color: var(--color-effect);
+}
+
+svg:not(.logo) path {
+	fill: var(--color-active);
+}
+
+html {
+}
+
+body {
+	height: 100vh;
+	background-color: var(--bg-color);
+
+	color: var(--color-text);
+	position: relative;
+
+	overflow-x: hidden;
+}
+
+.container {
+	width: 988px;
+	margin: 0 auto;
+}
+
+.main > section {
+	margin-bottom: 100px;
+}
+
+.link {
+	color: var(--color-text);
+	/* text__link */
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+
+	transition: var(--effect-end);
+
+	&:hover {
+		transition: var(--effect-start);
+		color: var(--color-effect);
+	}
+}
+
+p,
+li {
+	color: var(--color-text);
+	font-family: 'PT Serif', serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+
+	margin-bottom: 10px;
+}
+
+li {
+	padding-left: 23px;
+	position: relative;
+}
+
+li::before {
+	content: '';
+	display: block;
+	height: 10px;
+	width: 10px;
+	background-color: var(--color-active);
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	transform: translate(0, -50%);
+}
+
+.subtitle {
+	color: var(--color-text);
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+
+	margin-bottom: 45px;
+}
+
+h2.effect {
+	color: var(--color-active);
+	font-family: Montserrat;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+h3.effect {
+	color: var(--color-active);
+	font-family: Montserrat;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.btn {
+	width: 100%;
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 20px;
+	background-color: var(--color-active);
+	transition: var(--effect-end);
+
+	&:hover {
+		transition: var(--effect-start);
+		background: var(--color-text);
+		color: var(--color-effect);
+	}
+}
+
+.ellipse {
+	position: absolute;
+	display: block;
+	background-color: var(--color-effect);
+	filter: blur(313px);
+	width: 429px;
+	height: 394px;
+}
+
+.ellipse-1 {
+	left: 46px;
+	top: 12px;
+}
+
+.ellipse-2 {
+	right: 42px;
+	top: 182px;
+}
+
+.main_img {
+	position: absolute;
+	width: 569.021px;
+	height: 497.556px;
+
+	right: -125.898px;
+	top: 48.034px;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}

@@ -1,0 +1,83 @@
+.section-enducation {
+	.section-enducation__wrapper-sections {
+		display: grid;
+		grid-auto-rows: 643px;
+		gap: 20px;
+	}
+}
+
+.accordion {
+	display: flex;
+	flex-direction: column;
+
+	gap: 20px;
+	.accordion__body {
+		display: none;
+		gap: 25px;
+		justify-content: center;
+		align-items: center;
+		margin-top: 45px;
+	}
+
+	.accordion__header {
+		padding: 0px 30px;
+		border-radius: 20px;
+		overflow: hidden;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		transition: var(--effect-end);
+		height: 90px;
+
+		.ellipse {
+			right: 30px;
+			bottom: -222px;
+		}
+
+		&:hover {
+			& h2 {
+				transition: var(--effect-start);
+				color: var(--color-text);
+			}
+
+			& svg path {
+				transition: var(--effect-start);
+				fill: var(--color-text);
+			}
+		}
+	}
+
+	.accordion__body-left {
+		flex: 0 0 232px;
+		display: flex;
+		flex-direction: column;
+
+		gap: 21px;
+
+		.accordion__img {
+			height: 232px;
+			background-color: var(--color-text);
+			border-radius: 20px;
+		}
+
+		.accordion__btn-wrapper {
+			height: 50px;
+		}
+	}
+
+	.accordion__body-right {
+		width: 567px;
+	}
+}
+
+.accordion__elem.active {
+	& .accordion__svg {
+		transition: var(--effect-start);
+		transform: rotate(180deg);
+	}
+
+	& .accordion__body {
+		display: flex;
+	}
+}
