@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IT Porfolio</title>
   <link rel="stylesheet" href="./style/index.css">
-
 </head>
 
 <body>
+
+  <script src="./scripts/animate/index.js" defer></script>
   <div class="ellipse ellipse-1"></div>
   <div class="ellipse ellipse-2"></div>
-  <div class="main_img">
-    <img src="./static/main__img.png" alt="img">
-  </div>
+
+
   <header class="header">
     <div class="header__container container">
       <div class="header__logo">
@@ -71,6 +71,9 @@
   <main class="main">
     <section class="main__section-prewiew section-prewiew">
       <div class="section-prewiew__container container">
+        <div class="main_img">
+          <img src="./static/main__img.png" alt="img">
+        </div>
         <div class="section-prewiew__info-wrapper">
           <h1 class="section-prewiew__title">Мое обучение в <span>Кванториуме ГАЗ</span></h1>
           <div class="section-prewiew__svg">
@@ -104,7 +107,7 @@
             <h3 class="section-about__name">Иван Иванов</h3>
             <div class="ellipse"></div>
           </div>
-          <div class="section-about__block-biog">
+          <div data-animate-count="once" class="section-about__block-biog  animate left">
             <h3 class="section-about__block-biog-title effect">Немного о себе</h3>
             <p class="section-about__block-biog-text">
               Идейные соображения высшего порядка, а также синтетическое тестирование создаёт предпосылки для форм
@@ -133,7 +136,7 @@
                 </h2>
               </div>
             </div>
-            <div class="section-enducation__sections-right">
+            <div data-animate-count="once" class="section-enducation__sections-right animate left">
               <div class="ellipse"></div>
               <div class="section-enducation__sections-disc">
                 <h2 class="effect">Определение: </h2>
@@ -172,7 +175,7 @@
                 </h2>
               </div>
             </div>
-            <div class="section-enducation__sections-right">
+            <div data-animate-count="once" class="section-enducation__sections-right animate right">
               <div class="ellipse"></div>
               <div class="section-enducation__sections-disc">
                 <h2 class="effect">Определение: </h2>
@@ -211,7 +214,7 @@
                 </h2>
               </div>
             </div>
-            <div class="section-enducation__sections-right">
+            <div data-animate-count="once" class="section-enducation__sections-right animate left">
               <div class="ellipse"></div>
               <div class="section-enducation__sections-disc">
                 <h2 class="effect">Определение: </h2>
@@ -246,13 +249,15 @@
 
     <section class="main__section-devlopments section-devlopments">
       <div class="section-devlopments__container container">
+        <h2 class="section-enducation__subtitle subtitle">Разработки в VR</h2>
         <div class="section-devlopments__sliders-wrapper">
+
           <div class="section-devlopments__slider">
             <div class="section-devlopments__img">
 
             </div>
 
-            <div class="section-devlopments__disc">
+            <div data-animate-count="once" class="section-devlopments__disc animate left">
               <div class="ellipse"></div>
               <h3 class="effect">Описание:</h3>
               <p>Идейные соображения высшего порядка, а также синтетическое тестирование создаёт предпосылки для форм
@@ -260,7 +265,7 @@
                 нашей деятельности в значительной степени обусловливает важность форм воздействия.</p>
             </div>
 
-            <div class="section-devlopments__author">
+            <div data-animate-count="once" class="section-devlopments__author animate top">
               <div class="ellipse"></div>
               <h3>Иван Иванов</h3>
               <div class="section-devlopments__svg">
@@ -279,7 +284,7 @@
           </div>
 
 
-          <div class="section-devlopments__btns-wrapper">
+          <div data-animate-count="once" class="section-devlopments__btns-wrapper animate default">
 
             <div class="section-devlopments__btn">
               <button>

@@ -1,4 +1,5 @@
 .section-prewiew {
+	position: relative;
 	.section-prewiew__info-wrapper {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
@@ -16,6 +17,13 @@
 
 		grid-row: 1/2;
 		grid-column: span 10;
+
+		position: relative;
+
+		animation-name: AnimateTitle;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-fill-mode: both;
 	}
 
 	.section-prewiew__svg {
@@ -24,6 +32,14 @@
 
 		align-self: center;
 		justify-self: center;
+
+		position: relative;
+
+		animation-name: AnimateSvg;
+		animation-duration: 1.9s;
+		animation-timing-function: linear;
+		animation-fill-mode: both;
+		animation-iteration-count: infinite;
 	}
 
 	.section-prewiew__text {
@@ -34,5 +50,107 @@
 	.section-prewiew__btn-wrapper {
 		grid-row: 3/4;
 		grid-column: 2/6;
+	}
+}
+
+.main_img {
+	position: absolute;
+	width: 569.021px;
+	height: 497.556px;
+
+	animation-name: AnimateMainImg;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-fill-mode: both;
+}
+
+.ellipse-1 {
+	left: 46px;
+	top: 12px;
+
+	animation-name: AnimateEllipse;
+	animation-duration: 30s;
+	animation-timing-function: linear;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+}
+
+.ellipse-2 {
+	right: 42px;
+	top: 182px;
+
+	animation-name: AnimateEllipse;
+	animation-duration: 30s;
+	animation-timing-function: linear;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+}
+
+@keyframes AnimateTitle {
+	0% {
+		opacity: 0;
+		top: 20px;
+	}
+	100% {
+		opacity: 1;
+		top: 0px;
+	}
+}
+
+@keyframes AnimateMainImg {
+	0% {
+		opacity: 0;
+
+		right: -200px;
+		top: 0px;
+	}
+	100% {
+		opacity: 1;
+		right: -125.898px;
+		top: 48.034px;
+	}
+}
+
+@keyframes AnimateMainImg {
+	0% {
+		opacity: 0;
+
+		right: -200px;
+		top: 0px;
+	}
+	100% {
+		opacity: 1;
+		right: -125.898px;
+		top: 48.034px;
+	}
+}
+
+@keyframes AnimateEllipse {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes AnimateSvg {
+	0% {
+		opacity: 0;
+		left: 0px;
+	}
+
+	50% {
+		opacity: 1;
+		left: 5px;
+	}
+
+	100% {
+		left: 0px;
+		opacity: 0;
 	}
 }
