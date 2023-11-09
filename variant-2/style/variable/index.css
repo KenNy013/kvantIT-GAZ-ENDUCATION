@@ -5,8 +5,10 @@
 	--color-active: #f74d70;
 
 	--border: 5px solid var(--color-effect);
-	--effect-start: all 0.9s ease;
-	--effect-end: all 0.4s ease;
+	--effect-start: color, background-color, border-color, fill 0.9s linear;
+	--effect-end: color, fill, border-color background-color 0.5s linear;
+
+	--effect-visible: all 0.5s linear;
 }
 
 h1 span {
@@ -174,4 +176,54 @@ img {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
+}
+
+.animate {
+	&.left {
+		position: relative;
+		left: 100px;
+		opacity: 0;
+		transition: var(--effect-visible);
+
+		&.active {
+			transition: var(--effect-visible);
+			left: 0px;
+			opacity: 1;
+		}
+	}
+
+	&.right {
+		position: relative;
+		right: 100px;
+		opacity: 0;
+		transition: var(--effect-visible);
+
+		&.active {
+			transition: var(--effect-visible);
+			right: 0px;
+			opacity: 1;
+		}
+	}
+
+	&.top {
+		position: relative;
+		top: 20px;
+		opacity: 0;
+		transition: var(--effect-visible);
+
+		&.active {
+			transition: var(--effect-visible);
+			top: 0px;
+			opacity: 1;
+		}
+	}
+
+	&.default {
+		transition: var(--effect-visible);
+		opacity: 0;
+		&.active {
+			transition: var(--effect-visible);
+			opacity: 1;
+		}
+	}
 }

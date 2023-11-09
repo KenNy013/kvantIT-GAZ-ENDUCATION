@@ -6,24 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IT Porfolio</title>
   <link rel="stylesheet" href="./style/index.css">
-
 </head>
 
 <body>
+
+  <script src="./scripts/animate/index.js" defer></script>
   <div class="ellipse ellipse-1"></div>
   <div class="ellipse ellipse-2"></div>
-  <div class="main_img">
-    <img src="./static/main__img.png" alt="img">
-  </div>
+
+
   <header class="header">
     <div class="header__container container">
       <div class="header__logo">
-        <svg xmlns="http://www.w3.org/2000/svg" width="190" height="50" viewBox="0 0 190 50" fill="none" class="logo">
+        <svg width="190" height="50" viewBox="0 0 190 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo">
           <path
             d="M0 18C0 8.05887 8.5879 0 19.1816 0H51.1509C52.328 0 53.2822 0.895431 53.2822 2V48C53.2822 49.1046 52.328 50 51.1509 50H2.13129C0.954212 50 0 49.1046 0 48V18Z"
             fill="#FBF7F7" />
-          <path d="M13.6292 36.2V14.36H19.0154V36.2H13.6292Z" fill="#2127B2" />
-          <path d="M29.3597 36.2V18.4784H21.9121V14.36H42.1935V18.4784H34.7459V36.2H29.3597Z" fill="#2127B2" />
+          <path d="M13.6292 36.2V14.36H19.0154V36.2H13.6292Z" fill="#2127b2" />
+          <path d="M29.3597 36.2V18.4784H21.9121V14.36H42.1935V18.4784H34.7459V36.2H29.3597Z" fill="#2127b2" />
           <path
             d="M58.4966 48.6V34.32H65.0836C66.4459 34.32 67.6198 34.5308 68.6053 34.9524C69.5909 35.3604 70.3517 35.952 70.888 36.7272C71.4242 37.5024 71.6923 38.4272 71.6923 39.5016C71.6923 40.5624 71.4242 41.4804 70.888 42.2556C70.3517 43.0308 69.5909 43.6292 68.6053 44.0508C67.6198 44.4588 66.4459 44.6628 65.0836 44.6628H60.4532H62.0184V43.1736V48.6H58.4966ZM62.0184 43.5408V41.97H60.4532H64.888C65.9749 41.97 66.7865 41.7524 67.3227 41.3172C67.859 40.882 68.1271 40.2768 68.1271 39.5016C68.1271 38.7128 67.859 38.1008 67.3227 37.6656C66.7865 37.2304 65.9749 37.0128 64.888 37.0128H60.4532H62.0184V35.442V43.5408Z"
             fill="#FBF7F7" />
@@ -47,17 +47,17 @@
             fill="#FBF7F7" />
           <path
             d="M61.9967 27.2V23.3L68.7358 16.52H72.6488L66.0836 23.15L64.1271 25.1084L61.9967 27.2ZM58.4966 30.8V16.52H61.9967V30.8H58.4966ZM68.9097 30.8L63.4967 24.578L64.0358 25.1978L66.0836 23.15L73.0184 30.8H68.9097Z"
-            fill="#2127B2" />
+            fill="#2127b2" />
           <path
             d="M78.2835 30.8L71.7183 16.52H75.5227L81.2618 29.168L80.1422 26.7375L79.0227 29.168L84.8487 16.52H88.3487L81.7618 30.8H78.2835Z"
-            fill="#2127B2" />
+            fill="#2127b2" />
           <path
             d="M87.1098 30.8L93.8924 16.52H97.3707L104.175 30.8H100.479L94.9141 18.1928L95.6098 19.7687L96.3055 18.1928L90.7185 30.8H87.1098ZM90.5011 27.74H92.0745L92.6305 26.4854L93.1865 25.2308H91.4359H99.262H98.0209L98.6421 26.6379L99.1286 27.74H100.218H90.5011Z"
-            fill="#2127B2" />
+            fill="#2127b2" />
           <path
             d="M105.754 30.8V16.52H108.667L117.645 26.8016L116.232 25.1834V26.8016V16.52H119.71V30.8H116.819L107.819 20.5184L109.232 22.1327V20.5184V30.8H105.754Z"
-            fill="#2127B2" />
-          <path d="M126.463 30.8V19.2128H121.593V16.52H134.854V19.2128H129.985V30.8H126.463Z" fill="#2127B2" />
+            fill="#2127b2" />
+          <path d="M126.463 30.8V19.2128H121.593V16.52H134.854V19.2128H129.985V30.8H126.463Z" fill="#2127b2" />
         </svg>
       </div>
       <nav class="header__nav">
@@ -71,6 +71,9 @@
   <main class="main">
     <section class="main__section-prewiew section-prewiew">
       <div class="section-prewiew__container container">
+        <div class="main_img">
+          <img src="./static/main__img.png" alt="img">
+        </div>
         <div class="section-prewiew__info-wrapper">
           <h1 class="section-prewiew__title">Мое обучение в <span>Кванториуме ГАЗ</span></h1>
           <div class="section-prewiew__svg">
@@ -104,7 +107,7 @@
             <h3 class="section-about__name">Иван Иванов</h3>
             <div class="ellipse"></div>
           </div>
-          <div class="section-about__block-biog">
+          <div data-animate-count="once" class="section-about__block-biog  animate left">
             <h3 class="section-about__block-biog-title effect">Немного о себе</h3>
             <p class="section-about__block-biog-text">
               Идейные соображения высшего порядка, а также синтетическое тестирование создаёт предпосылки для форм
@@ -133,7 +136,7 @@
                 </h2>
               </div>
             </div>
-            <div class="section-enducation__sections-right">
+            <div data-animate-count="once" class="section-enducation__sections-right animate left">
               <div class="ellipse"></div>
               <div class="section-enducation__sections-disc">
                 <h2 class="effect">Определение: </h2>
@@ -172,7 +175,7 @@
                 </h2>
               </div>
             </div>
-            <div class="section-enducation__sections-right">
+            <div data-animate-count="once" class="section-enducation__sections-right animate right">
               <div class="ellipse"></div>
               <div class="section-enducation__sections-disc">
                 <h2 class="effect">Определение: </h2>
@@ -211,7 +214,7 @@
                 </h2>
               </div>
             </div>
-            <div class="section-enducation__sections-right">
+            <div data-animate-count="once" class="section-enducation__sections-right animate left">
               <div class="ellipse"></div>
               <div class="section-enducation__sections-disc">
                 <h2 class="effect">Определение: </h2>
@@ -246,13 +249,15 @@
 
     <section class="main__section-devlopments section-devlopments">
       <div class="section-devlopments__container container">
+        <h2 class="section-enducation__subtitle subtitle">Разработки в VR</h2>
         <div class="section-devlopments__sliders-wrapper">
+
           <div class="section-devlopments__slider">
             <div class="section-devlopments__img">
 
             </div>
 
-            <div class="section-devlopments__disc">
+            <div data-animate-count="once" class="section-devlopments__disc animate left">
               <div class="ellipse"></div>
               <h3 class="effect">Описание:</h3>
               <p>Идейные соображения высшего порядка, а также синтетическое тестирование создаёт предпосылки для форм
@@ -260,7 +265,7 @@
                 нашей деятельности в значительной степени обусловливает важность форм воздействия.</p>
             </div>
 
-            <div class="section-devlopments__author">
+            <div data-animate-count="once" class="section-devlopments__author animate top">
               <div class="ellipse"></div>
               <h3>Иван Иванов</h3>
               <div class="section-devlopments__svg">
@@ -279,7 +284,7 @@
           </div>
 
 
-          <div class="section-devlopments__btns-wrapper">
+          <div data-animate-count="once" class="section-devlopments__btns-wrapper animate default">
 
             <div class="section-devlopments__btn">
               <button>
